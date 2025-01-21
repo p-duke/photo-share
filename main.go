@@ -46,7 +46,6 @@ func main() {
 
 	r.Get("/", homeHandler)
 	r.Get("/contact", contactHandler)
-	r.Get("/faq", faqHandler)
 	r.NotFound(func(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Page not found", http.StatusNotFound)
 	})
